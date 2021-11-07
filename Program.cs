@@ -9,11 +9,11 @@ namespace sda_sharp_exercises
 
         static void Main(string[] args)
         {
-            ToLeet("Leeat");
-            DeLeet("4$14 ");
+            Console.WriteLine(ToLeet("Leeat"));
+            Console.WriteLine(DeLeet("4$14 "));
         }
 
-        static void ToLeet (string text)
+        static string ToLeet (string text)
         {
  
             string newtext = text;
@@ -23,12 +23,10 @@ namespace sda_sharp_exercises
                 newtext = newtext.Replace(naturalLetters[i], leetLetters[i]);
             }
             
-          
-          
-            Console.WriteLine(newtext);
+            return newtext;
         }
 
-        static void DeLeet(string text)
+        static string DeLeet(string text)
         {
         
             string newtext = text;
@@ -38,9 +36,7 @@ namespace sda_sharp_exercises
                 newtext = newtext.Replace(leetLetters[i], naturalLetters[i]);
             }
 
-
-
-            Console.WriteLine(newtext);
+            return newtext;
         }
     }
 }
