@@ -6,7 +6,7 @@ namespace sda_sharp_exercises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Witaj E00");
         }
     }
 }
