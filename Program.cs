@@ -4,6 +4,9 @@ namespace sda_sharp_exercises
 {
     class Program
     {
+        static char[] leetLetters = { '4', '3', '1', '0', '$' };
+        static char[] naturalLetters = { 'a', 'e', 'i', 'o', 's' };
+
         static void Main(string[] args)
         {
             ToLeet("Leeat");
@@ -12,10 +15,7 @@ namespace sda_sharp_exercises
 
         static void ToLeet (string text)
         {
-             char[] leetLetters = { '4', '3', '1', '0', '$' };
-             char[] naturalLetters = { 'a', 'e', 'i', 'o', 's' };
-
-          
+ 
             string newtext = text;
 
             for (int i = 0; i < leetLetters.Length; i++)
@@ -30,10 +30,7 @@ namespace sda_sharp_exercises
 
         static void DeLeet(string text)
         {
-            char[] leetLetters = { '4', '3', '1', '0', '$' };
-            char[] naturalLetters = { 'a', 'e', 'i', 'o', 's' };
-
-
+        
             string newtext = text;
 
             for (int i = 0; i < leetLetters.Length; i++)
